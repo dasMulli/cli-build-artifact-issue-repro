@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true
+  },
+  "dependencies": {
+    "Microsoft.NETCore.Platforms": "1.0.1-rc2-*",
+    "Libuv": "1.9.0-rc2-*"
+  },
+  "frameworks": {
+    "net451": {},
+    "netcoreapp1.0": {
+      "imports": "dnxcore50",
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "version": "1.0.0-rc2-*",
+          "type": "default"
+        }
+      }
+    }
+  },
+  "runtimes": {
+    "win7-x64": {},
+    "osx.10.11-x64": {}
+  }
+}

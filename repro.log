@@ -1,0 +1,91 @@
+Using dotnet from ./dotnet/dotnet (version: 1.0.0-preview1-preview1-002697)
+dotnet --info output:
+.NET Command Line Tools (1.0.0-preview1-preview1-002697)
+
+Product Information:
+ Version:     1.0.0-preview1-preview1-002697
+ Commit Sha:  08b3ad9e88
+
+Runtime Environment:
+ OS Name:     Mac OS X
+ OS Version:  10.11
+ OS Platform: Darwin
+ RID:         osx.10.11-x64
+Beginning repro
+log  : Restoring packages for /Users/martin/Documents/Repo/TestApp/project.json...
+info :   CACHE https://myget-2e16.kxcdn.com/artifacts/aspnetcirelease/nuget/v3/flatcontainer/microsoft.netcore.platforms/index.json
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/index.json
+info :   CACHE https://myget-2e16.kxcdn.com/artifacts/aspnetcirelease/nuget/v3/flatcontainer/libuv/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/libuv/index.json
+info :   CACHE https://myget-2e16.kxcdn.com/artifacts/aspnetcirelease/nuget/v3/flatcontainer/microsoft.netcore.app/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app/index.json
+info :   NotFound https://api.nuget.org/v3-flatcontainer/libuv/index.json 935ms
+info :   NotFound https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app/index.json 912ms
+info :   CACHE https://myget-2e16.kxcdn.com/artifacts/aspnetcirelease/nuget/v3/flatcontainer/microsoft.netcore.dotnethostresolver/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.netcore.dotnethostresolver/index.json
+info :   NotFound https://api.nuget.org/v3-flatcontainer/microsoft.netcore.dotnethostresolver/index.json 875ms
+info :   CACHE https://myget-2e16.kxcdn.com/artifacts/aspnetcirelease/nuget/v3/flatcontainer/microsoft.netcore.dotnethost/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.netcore.dotnethost/index.json
+info :   NotFound https://api.nuget.org/v3-flatcontainer/microsoft.netcore.dotnethost/index.json 900ms
+info : Committing restore...
+log  : Writing lock file to disk. Path: /Users/martin/Documents/Repo/TestApp/project.lock.json
+log  : ./TestApp/project.json
+log  : Restore completed in 3902ms.
+
+NuGet Config files used:
+    /Users/martin/Documents/Repo/TestApp/NuGet.Config
+    /Users/martin/.nuget/NuGet/NuGet.Config
+
+Feeds used:
+    https://www.myget.org/F/aspnetcirelease/api/v3/index.json
+    https://api.nuget.org/v3/index.json
+Publishing TestApp for .NETCoreApp,Version=v1.0/osx.10.11-x64
+Project TestApp (.NETCoreApp,Version=v1.0) will be compiled because expected outputs are missing
+Compiling TestApp for .NETCoreApp,Version=v1.0
+
+Compilation succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time elapsed 00:00:03.1386598
+ 
+
+publish: Published to /Users/martin/Documents/Repo/TestApp/bin/Release/netcoreapp1.0/osx.10.11-x64/publish
+Publishing TestApp for .NETFramework,Version=v4.5.1/osx.10.11-x64
+Project TestApp (.NETFramework,Version=v4.5.1) will be compiled because expected outputs are missing
+Compiling TestApp for .NETFramework,Version=v4.5.1
+
+Compilation succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time elapsed 00:00:02.8294039
+ 
+
+publish: Published to /Users/martin/Documents/Repo/TestApp/bin/Release/net451/osx.10.11-x64/publish
+Published 2/2 projects successfully
+Publishing TestApp for .NETCoreApp,Version=v1.0/win7-x64
+Project TestApp (.NETCoreApp,Version=v1.0) will be compiled because expected outputs are missing
+Compiling TestApp for .NETCoreApp,Version=v1.0
+
+Compilation succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time elapsed 00:00:03.2758042
+ 
+
+publish: Published to /Users/martin/Documents/Repo/TestApp/bin/Release/netcoreapp1.0/win7-x64/publish
+Publishing TestApp for .NETFramework,Version=v4.5.1/win7-x64
+Project TestApp (.NETFramework,Version=v4.5.1) will be compiled because expected outputs are missing
+Compiling TestApp for .NETFramework,Version=v4.5.1
+
+Compilation succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time elapsed 00:00:02.8293994
+ 
+
+publish: Published to /Users/martin/Documents/Repo/TestApp/bin/Release/net451/win7-x64/publish
+Published 2/2 projects successfully
